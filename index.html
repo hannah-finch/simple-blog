@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Blog</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="./assets/css/form.css">
+</head>
+<body>
+  <header>
+    <a></a> <!-- light mode / dark mode toggle -->
+  </header>
+
+  <main>
+    <a href="./blog.html" class=""> <!-- circle -->
+      <h1>My Blog</h1>
+    </a>
+
+    <div class=""></div> <!-- vertical line -->
+
+    <div class=""> <!-- container for heading and form -->
+      <h2>What's on your mind?</h2>
+      <form id="postform">
+        <label for="username">Username</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="ptitle">Post Title</label><br>
+        <input type="text" id="ptitle" name="ptitle"><br>
+        <label for="pcomment">Comment</label><br>
+        <input type="textarea" id="pcomment" name="pcomment"><br>
+        <button type="submit" form="postform" value="Submit">Submit</button>
+      </form>
+    </div>
+  </main>
+
+  <script type="text/javascript" src="./assets/js/form.js"></script>
+  <script type="text/javascript" src="./assets/js/logic.js"></script>
+
+</body>
+</html>

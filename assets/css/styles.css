@@ -1,0 +1,21 @@
+body {
+  font-size: 16px;
+  font-family: Jost, Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+/* Text styles */
+h1 {
+  font-family: Aleo, serif;
+  font-size: 400%;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 160%;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-style: italic;
+}

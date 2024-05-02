@@ -1,6 +1,6 @@
 :root {
-  --background: #fcfcfc;
-  --main: #000000;
+  --background: ;
+  --main: ;
   --accent: #d8db0c;
   --accent2: #b1e0f0;
 }
@@ -54,7 +54,7 @@ button:hover {
 }
 
 .shadow {
-  box-shadow: 0 0 4px #7272723f;
+  box-shadow: 0 0 4px #bababa65;
 }
 
 /* Header styles ---------------------- */

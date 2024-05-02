@@ -44,6 +44,7 @@ form input, #pcomment {
   background-color: #e6f7fd;
   border: none;
   line-height: 1.5;
+  font-family: jost, Arial, Helvetica, sans-serif;
 }
 #pcomment {
   height: 120px;

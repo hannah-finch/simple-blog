@@ -1,0 +1,55 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.line-vertical {
+  border-left: 8px double var(--main);
+  margin: 0 5%;
+  height: 600px;
+}
+
+.title-circle {
+  background-image: linear-gradient(var(--accent2), var(--accent));
+  border-radius: 100%;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  flex: 1 1 auto;
+}
+
+.container01 {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  flex: 1 1 400px;
+}
+
+.container01 h2 {
+  text-align: center;
+}
+
+form {
+ display: flex;
+ flex-direction: column;
+ flex: 1 1 auto;
+}
+
+form input, #pcomment {
+  background-color: #e6f7fd;
+  border: none;
+  line-height: 1.5;
+}
+#pcomment {
+  height: 120px;
+  resize: none;
+}
+
+header {
+  justify-content: flex-end;
+}

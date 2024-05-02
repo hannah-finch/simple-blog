@@ -18,26 +18,26 @@
 </head>
 <body>
   <header>
-    <a></a> <!-- light mode / dark mode toggle -->
+    <a id="toggle"><img src="./assets/images/icon_sun.png" alt="" class=""></a> <!-- light mode / dark mode toggle -->
   </header>
 
   <main>
     <a href="./blog.html" class=""> <!-- circle -->
-      <h1>My Blog</h1>
+      <h1 class="title-circle shadow">My Blog</h1>
     </a>
 
-    <div class=""></div> <!-- vertical line -->
+    <div class="line-vertical"></div> <!-- vertical line -->
 
-    <div class=""> <!-- container for heading and form -->
+    <div class="container01"> <!-- container for heading and form -->
       <h2>What's on your mind?</h2>
-      <form id="postform">
+      <form id="pform">
         <label for="username">Username</label><br>
         <input type="text" id="username" name="username"><br>
         <label for="ptitle">Post Title</label><br>
         <input type="text" id="ptitle" name="ptitle"><br>
         <label for="pcomment">Comment</label><br>
-        <input type="textarea" id="pcomment" name="pcomment"><br>
-        <button type="submit" form="postform" value="Submit">Submit</button>
+        <textarea id="pcomment" name="pcomment"></textarea><br>
+        <button type="submit" form="pform" value="Submit">Submit</button>
       </form>
     </div>
   </main>

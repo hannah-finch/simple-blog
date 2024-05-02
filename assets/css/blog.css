@@ -2,3 +2,28 @@
 h1 {
   font-size: 200%;
 }
+
+h2 {
+  border-bottom: 1px solid var(--main)
+}
+
+header {
+  justify-content: space-between;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.post-card {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+footer {
+  border-top: 8px double var(--main);
+  padding: 40px 10%;
+}

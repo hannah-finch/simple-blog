@@ -1,10 +1,11 @@
-body {
-  font-size: 16px;
-  font-family: Jost, Arial, Helvetica, sans-serif;
-  line-height: 1.5;
+:root {
+  --background: #fcfcfc;
+  --main: #000000;
+  --accent: #d8db0c;
+  --accent2: #b1e0f0;
 }
 
-/* Text styles */
+/* Text styles --------------------- */
 h1 {
   font-family: Aleo, serif;
   font-size: 400%;
@@ -18,4 +19,53 @@ h2 {
 
 h3 {
   font-style: italic;
+  margin-top: 20px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+/* General Styles -------------------- */
+body {
+  font-size: 16px;
+  font-family: Jost, Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  background-color: var(--background);
+  color: var(--main);
+}
+
+main {
+  margin: 0 10%;
+}
+
+button {
+  background-color: var(--accent);
+  border: none;
+  padding: 12px;
+  font-family: jost, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 100%;
+  border-radius: 2px;
+}
+
+button:hover {
+  background-color: var(--accent2);
+}
+
+.shadow {
+  box-shadow: 0 0 4px #7272723f;
+}
+
+/* Header styles ---------------------- */
+header {
+  height: 60px;
+  border-bottom: 8px double var(--main);
+  display: flex;
+  align-items: center;
+  padding: 10px 10% 0;
+}
+
+#toggle img {
+  width: 30px;
 }

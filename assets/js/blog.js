@@ -1,23 +1,25 @@
-const posts = document.getElementById("posts");
+const postsContainer = document.getElementById("posts-container"); // post will go in this div
+const postList = JSON.parse(localStorage.getItem('oldPosts'));
 
-function createPost() {
-  const post = document.createElement("div");
-  post.setAttribute("class", "post-card shadow");
-  posts.appendChild(post);
+//iterate through postList and make a post for each
+for (let i=0; i < postList.length; i++) {
+  const currentPost = postList[i];
 
+  // create elements
+  const postContainer = document.createElement("div");
   const postTitle = document.createElement("h2");
-  postTitle.innerHTML = "akjsdflakjdfkjlasjd";
-  post.appendChild(postTitle);
-
   const postComment = document.createElement("p");
-  postComment.innerHTML = "lkhlasdfasdg aklsdjf lajsdl lkasdkjf asdfalkjs dflasdkljflka sdfks ldkf;lkasdfajkdsf kaljdsf ak"
-  post.appendChild(postComment)
-
   const postAuthor = document.createElement("h3");
-  postAuthor.innerHTML = "Author: "+ "lkhl"
-  post.appendChild(postAuthor)
-}
 
-createPost();
-createPost();
-createPost();
+  // style/add text to elements
+  postContainer.setAttribute("class", "post-card shadow");
+  postTitle.innerHTML = currentPost.title;
+  postComment.innerHTML = currentPost.comment;
+  postAuthor.innerHTML = "Author: " + currentPost.author;
+
+  // display elements
+  postsContainer.prepend(postContainer);
+  postContainer.appendChild(postTitle);
+  postContainer.appendChild(postComment);
+  postContainer.appendChild(postAuthor);
+}

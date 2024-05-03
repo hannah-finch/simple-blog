@@ -18,6 +18,7 @@ header {
 }
 
 .post-card {
+  background-color: var(--post);
   margin: 20px;
   padding: 20px;
   border-radius: 10px;

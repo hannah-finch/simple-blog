@@ -1,6 +1,8 @@
 :root {
+  /* see logic.js */
   --background: ;
   --main: ;
+  --post: ;
   --accent: #d8db0c;
   --accent2: #b1e0f0;
 }
@@ -55,7 +57,7 @@ button:hover {
 }
 
 .shadow {
-  box-shadow: 0 0 4px #bababa65;
+  box-shadow: 0 0 4px #86868665;
 }
 
 /* Header styles ---------------------- */
@@ -69,4 +71,19 @@ header {
 
 #toggle img {
   width: 30px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 280%
+  }
+
+  h2 {
+    font-size: 150%;
+  }
+  
+  main {
+    margin: 0 5%;
+  }
 }

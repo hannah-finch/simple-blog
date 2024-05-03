@@ -1,14 +1,12 @@
+header {
+  justify-content: flex-end;
+}
+
 main {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-}
-
-.line-vertical {
-  border-left: 8px double var(--main);
-  margin: 0 5%;
-  height: 600px;
 }
 
 .title-circle {
@@ -20,14 +18,20 @@ main {
   justify-content: center;
   align-items: center;
   margin: 20px;
-  flex: 1 1 auto;
 }
 
+.line-vertical {
+  border-left: 8px double var(--main);
+  margin: 0 5%;
+  height: 600px;
+}
+
+/* Right side styles------ */
 .container01 {
   display: flex;
   flex-direction: column;
   padding: 30px;
-  flex: 1 1 400px;
+  flex: 1 1 250px;
 }
 
 .container01 h2 {
@@ -51,6 +55,30 @@ form input, #pcomment {
   resize: none;
 }
 
-header {
-  justify-content: flex-end;
+/* Media queries for responsiveness ------*/
+@media screen and (max-width: 1055px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .line-vertical {
+    display: none;
+  }
+
+  .container01 {
+    align-self: stretch;
+  }
+
+  .title-circle {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .title-circle {
+    width: 230px;
+    height: 230px;
+  }
 }

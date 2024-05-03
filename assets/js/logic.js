@@ -7,6 +7,7 @@ const toggleImg = document.getElementById ('toggle-img')
 function dark() {
   root.style.setProperty ('--background', '#000000');
   root.style.setProperty ('--main', '#fcfcfc');
+  root.style.setProperty ('--post', '#171717');
   toggleImg.src = ('./assets/images/icon_moon.png');
   toggleImg.alt = "Switch to light mode";
 }
@@ -15,6 +16,7 @@ function dark() {
 function light() {
   root.style.setProperty ('--background', '#fcfcfc');
   root.style.setProperty ('--main', '#000000');
+  root.style.setProperty ('--post', '#ffffff');
   toggleImg.src = ('./assets/images/icon_sun.png');
   toggleImg.alt="Switch to dark mode";
 }

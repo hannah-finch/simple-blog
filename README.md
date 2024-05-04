@@ -3,6 +3,7 @@
 ## Description
 
 A two-page website where users can input and view blog posts.
+The deployed application can be found here: https://hannahschwen.github.io/simple-blog/
 
 ## Usage
 

@@ -1,7 +1,7 @@
 // Light/dark mode -----------------------------
 const root = document.querySelector (':root');
 const toggle = document.getElementById ('toggle');
-const toggleImg = document.getElementById ('toggle-img')
+const toggleImg = document.getElementById ('toggle-img');
 
 // Dark mode
 function dark() {

@@ -4,8 +4,8 @@ const commentInput = document.getElementById('pcomment');
 const submit = document.getElementById('submit');
 
 function savePost() {
-  if ((nameInput.value || titleInput.value || commentInput.value) == "") {
-    window.prompt('Please complete the form'); // If any part of form is blank, prompt to complete
+  if (nameInput.value=="" || titleInput.value=="" || commentInput.value =="") {
+    confirm('Please complete the form'); // If any part of form is blank, prompt to complete
 
   } else {
     // get saved array from local storage or make an empty array if none exists
